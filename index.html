@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-78421159-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-78421159-1');
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Welcome!</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<link href="default_bibbase.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js?ver=3.3"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+</head>
+
+<body>
+<div id="header">
+	<div id="logo"><a href="#"><img src="images/uw-logo-color-centered-reversed-300x180.png" height="70mm"></a></div>
+	<ul id="main-menu">
+    	<li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <!--<li><a href="#connect">Connect</a></li><-->
+    </ul>
+</div>
+
+<div id="container">
+
+<!--Begin About Section-->
+    <div id="about">
+    <ul id="top-social">
+        	<li><a href="https://scholar.google.com/citations?user=FW-0thoAAAAJ&hl=en" class="scholar" target="_blank">Google Scholar</a></li>
+          <li><a href="https://github.com/sravi-uwmadison/" class="github" target="_blank">Github</a></li>
+		  <li><a href="https://www.linkedin.com/in/lichsat" class="linkedin" target="_blank">LinkedIn</a></li>
+          <li><a href="https://sravi-uwmadison.github.io/" class="gitblog" target="_blank">Github blog</a></li>
+		  <li><a href="https://lichsat.wordpress.com/" class="wordpressblog" target="_blank">Wordpress blog</a></li>
+        </ul>
+        <h1>About</h1>
+		<div class="top-divider"></div>
+        <div class="content">
+        	<img src="images/my_photo_1.png" />
+            <h2>Sathya Narayanan Ravi</h2>
+            <p>Hi! I am an Assistant Professor in the Department of Computer Sciences, University of Illinois at Chicago. I completed my PhD with my adviser <a href="https://www.biostat.wisc.edu/~vsingh/" target="_blank">Prof. Vikas Singh</a>.
+							I also worked closely with <a href="https://www.stat.wisc.edu/~karlrohe/homepage/Welcome.html" target="_blank">Prof. Karl Rohe</a>
+						</p>
+<br>
+    My research interests lie in the intersection of Machine Learning, Computer Vision and Numerical Optimization. I am also interested in their applications in neuroimaging analysis<br><br>
+    If you are interested in getting in touch with me, feel free to send an email to
+    <script language="JavaScript">
+var username = "[sathya]";
+var hostname = "[uic]";
+var linktext = username + "@" + hostname + ".edu";
+document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + ".edu"+ "'>" + linktext + "</a>");
+</script> <br><br>Here is my  <a href="#research" target="_blank">  [CV] </a> <br><br><br></p>
+        </div>
+    <div class="bottom-divider"></div>
+    </div>
+<!--End About Section-->
+<div id="research">
+        <h1>Research Interests</h1>
+		<div class="top-divider"></div>
+        <div class="content">
+            <ul id="service-icons">
+            	<a href="https://github.com/sravi-uwmadison/deepcg/" target="_blank"><li class="services-dnn">Deep Learning</li></a>
+              <a href="https://github.com/sravi-uwmadison/fast_filter_flow" target="_blank"><li class="services-fflow">Fast Filter Flow</li></a>
+              <a href="https://github.com/sravi-uwmadison/Exp_design_sparse" target="_blank"><li class="services-ed">Sparse Experimental Design</li></a>
+              <a href="https://github.com/sravi-uwmadison/visual-tensor-decomposition" target="_blank"><li class="services-vqa">Visual Question Answering</li></a>
+            </ul>
+        </div>
+    </div>
+<!--Begin Experience Section-->
+    <div id="experience">
+        <div class="content">
+            <div class="col">
+            <h2><a href="https://github.com/sravi-uwmadison/deepcg/">Deep Learning</a></h2>
+            <p>Our recent work describes cheap methods to train deep networks with
+							<b>explicit constraints</b>:
+							we call it <i>Deep-Conditional Gradient</i> (Deep-CG).
+							Our paper provides compelling evidence supporting three distinct but
+							closely related threads:
+<li> global constraints are highly relevant;
+
+<li> the lack of support for global constraints in existing libraries may be
+	because of the complex interplay between constraints and SGD which can be
+	effectively side-stepped using CG; and
+li>
+constraints can be easily incorporated in existing implementations.
+</p>
+            </div>
+
+            <div class="col col-mid">
+            <h2><a href="https://sravi-uwmadison.github.io/2017/08/21/corensfw/">Parsimonious Algorithms</a></h2>
+            <p>Intuitively, a coreset is a subset of the original dataset
+							which behaves "almost" like the entire dataset,
+							that is, any (relevant) statistic
+							 computed using a coreset will be <b>provably close</b>
+							  to the quantity if computed using the entire dataset.
+								 In this work, the goal was to evaluate whether CG type methods
+								 can be derived for such nonsmooth problems in ML.
+								 This paper showed that  by bringing together with the
+								  &epsilon;-subdifferential
+								 and approximate subdifferential, there does exist a CG type algorithm
+								 for such problems. Using this construction,
+								 we were also able to analyze the sparsity of the solution at a given iteration,
+								 thus computing the coreset simultaneously.
+						</p>
+            </div>
+
+            <div class="col">
+            <h2><a href="https://github.com/sravi-uwmadison/prida">Computer Vision</a></h2>
+            <p>While the recent developments in computer vision
+						algorithms driving a range of turnkey applications
+						is exciting, an evolving body of works
+			  	  have concurrently shown the fragility of the algorithms,
+					  specifically with respect to random perturbations.
+						For instance, a state of the art vision system can
+						 be fooled into thinking that a "Stop" sign is a "Yield" sign
+						 simply by putting a tiny sticker on it.
+						 I am very interested in the systematic study of the
+						 resilience of vision algorithms and using the results or
+						 insights obtained to design better algorithms.  </p>
+            </div>
+        </div>
+        <div class="bottom-divider"></div>
+    </div>
+<!--End Experience Section-->
+
+<!--Begin Publications Section-->
+    <div id="publications">
+    	<h1>Publications</h1>
+			<script src="https://bibbase.org/show?bib=http://pages.cs.wisc.edu/~sravi/my_bib.bib&authorFirst=1&fullnames=0&group0=year&jsonp=1&css=https://pages.cs.wisc.edu/~sravi/default_bibbase.css"></script>
+
+        <div class="top-divider"></div>
+
+<!--
+        	<div class="content">
+            	<ul id="work-thumbs">
+                	<li><a href="images/work/work-full1.jpg" rel="prettyPhoto[1]" title="Image Description"><img src="images/work/work-thumb1.jpg"></a></li>
+                    <li><a href="images/work/work-full2.jpg" rel="prettyPhoto[1]" title="Image Description"><img src="images/work/work-thumb2.jpg"></a></li>
+                    <li><a href="images/work/work-full3.jpg" rel="prettyPhoto[1]" title="Image Description"><img src="images/work/work-thumb3.jpg"></a></li>
+                    <li class="last"><a href="images/work/work-full4.jpg" rel="prettyPhoto[1]" title="Image Description"><img src="images/work/work-thumb4.jpg"></a></li>
+                    <li><a href="images/work/work-full5.jpg" rel="prettyPhoto[1]" title="Image Description"><img src="images/work/work-thumb5.jpg"></a></li>
+                    <li><a href="images/work/work-full6.jpg" rel="prettyPhoto[1]" title="Image Description"><img src="images/work/work-thumb6.jpg"></a></li>
+                    <li><a href="images/work/work-full7.jpg" rel="prettyPhoto[1]" title="Image Description"><img src="images/work/work-thumb7.jpg"></a></li>
+                    <li class="last"><a href="images/work/work-full8.jpg" rel="prettyPhoto[1]" title="Image Description"><img src="images/work/work-thumb8.jpg"></a></li>
+                    <li><a href="images/work/work-full9.jpg" rel="prettyPhoto[1]" title="Image Description"><img src="images/work/work-thumb9.jpg"></a></li>
+                    <li><a href="images/work/work-full10.jpg" rel="prettyPhoto[1]" title="Image Description"><img src="images/work/work-thumb10.jpg"></a></li>
+                    <li><a href="images/work/work-full11.jpg" rel="prettyPhoto[1]" title="Image Description"><img src="images/work/work-thumb11.jpg"></a></li>
+                    <li class="last"><a href="images/work/work-full12.jpg" rel="prettyPhoto[1]" title="Image Description"><img src="images/work/work-thumb12.jpg"></a></li>
+                </ul>
+            </div>
+        <div class="bottom-divider"></div>
+    </div>
+End Work Section-->
+
+
+<!--Begin Connect Section
+    <div id="connect">
+    	<h1>Connect</h1>
+        <div class="top-divider"></div>
+        	<div class="content">
+            	<div id="form">
+                	<form action="#">
+                    	<span>Name</span>
+                        <input type="text" name="name" class="name" />
+                        <span>Email</span>
+                        <input type="text" name="email" class="email"/>
+                        <span>Message</span>
+                        <textarea class="message"></textarea>
+                        <input type="submit" name="submite" value="Submit" class="submit">
+                    </form>
+                </div>
+                <div id="social-footer">
+                	<h2>Follow Me:</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper </p>
+                    <ul id="sm-links">
+                    	<li><a href="#" class="facebook">Facebook</a></li>
+           				<li><a href="#" class="twitter">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+End Connect Section-->
+
+</div>
+
+ <!-- The JavaScript -->
+        <script type="text/javascript">
+    		$(function() {
+                $('#main-menu li a').bind('click',function(event){
+                    var $anchor = $(this);
+
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1500,'easeInOutExpo');
+
+                    event.preventDefault();
+                });
+            });
+
+ 			 $(document).ready(function(){
+    		$("a[rel^='prettyPhoto']").prettyPhoto({social_tools:false, deeplinking: false});
+  			});
+
+        </script>
+</body>
+</html>
